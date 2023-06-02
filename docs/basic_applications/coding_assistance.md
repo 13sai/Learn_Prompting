@@ -75,6 +75,7 @@ num_points = 50
 for i in range(num_points):
     y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
     print(' ' * (amplitude + y) + '*')
+###
 ```
 
 The output will be something like:
@@ -102,7 +103,7 @@ for i in range(num_points):
 
 ## Debugging
 
-Not only can ChatGPT detect syntax errors in code, but it can also find logical errors that would crop up when code is executed. Below is an example of a Python script that eventually causes a division by zero error one line 4 due to a logical error on line 3.  Try this simple prompt to find and fix the error:
+Not only can ChatGPT detect syntax errors in code, but it can also find logical errors that would crop up when code is executed. Below is an example of a Python script that eventually causes a division by zero error on line 4 due to a logical error on line 3.  Try this simple prompt to find and fix the error:
 
 ```text
 Please debug this Python code:  
